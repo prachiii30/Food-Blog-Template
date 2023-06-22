@@ -40,6 +40,17 @@ body{
     z-index: 1;
     
   }
+  .content-p{
+    position: relative;
+    z-index: 2;
+    margin: 150px;
+    width: fit-content;
+  }
+  .content-p img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+  }
   
 .header{
     align-items: center;
