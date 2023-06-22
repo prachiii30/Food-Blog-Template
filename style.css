@@ -1,0 +1,101 @@
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Raleway:ital,wght@0,300;0,500;1,300;1,400&family=Varela&family=Zen+Dots&display=swap');
+
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255, 255, 255, .3);   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+body{
+    background: var(--bg);
+}
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    
+  }
+  
+.header{
+    align-items: center;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: var(--border);
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: 'Varela', sans-serif;
+}
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom:.1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.logo{
+    height: 60px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    background-color: rgb(150, 142, 142);
+    border: none;
+    padding: 8px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+  }
+  button[type="submit"] :hover{
+    color: var(--main-color);
+  }
+  button[type="submit"] i {
+    color: #676363;
+  }
+  
+  
